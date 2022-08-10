@@ -1,0 +1,699 @@
+/* 
+    Theme Name: FJ Scaler Theme
+    Author: Andrew Kassab
+    Version: 1.0
+*/
+
+body,h1,h2,h3,h4,h5,h6,p,span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+height: 100%;
+line-height: 1.8;
+background-color: #f5f5f5;
+}
+
+
+
+*, ::before, ::after {
+  margin:0;
+  padding: 0;
+}
+
+.navbar_logo {
+  width: 300px;
+  height: auto;
+}
+
+.navbar-title{
+  margin: 20px;
+  margin-top: -20px;
+  display: inline-flex;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-right-items {
+  float: right!important;
+  padding-right: 30px;
+  margin-right: 100px;
+  
+  
+}
+
+.navbar-right-items .navbar-button{
+  margin: 20px;
+  margin-top: -20px;
+  display: inline-flex;
+}
+
+.navbar-button{
+  z-index: 1;
+}
+
+.textbox-navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2%;
+  width: 100%;
+  padding: 50px;
+  z-index: 1;
+  background-color: black;
+}
+
+.centered.text-white.text-center{
+  z-index: 1;
+}
+
+.fa.fa-bars{
+  padding-right: 0px;
+  z-index: 1;
+}
+
+.side-navbar{
+  height:100%;
+  width:200px;
+  background-color:#fff;
+  position:fixed!important;
+  z-index:1;
+  overflow:auto
+}
+
+.whole-navbar{
+  width: 100%;
+  overflow: hidden;
+}
+
+.whole-navbar .navbar-button {
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+}
+
+.fa {
+  padding-right: 10px;
+  padding-top: 6px;
+}
+
+
+
+@media (max-width:992px){
+  .hide-small { 
+      display:none!important
+  }
+}
+
+@media (min-width:993px) {
+  .hide-large {
+      display:none!important
+  }
+}
+
+/* Hover Animation */
+
+/* Hover Animation LINE */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dfdfdf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* Hover Animation LINE END ------------------*/
+
+.btn{
+  position: relative;
+  
+  color: white;
+  font-size: 16px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  border: 2px solid lightgrey;
+}
+.btn::before{
+  background: lightgray;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}
+
+
+/* this section is for the main photo */
+
+/*
+  .cover-img {
+  background-position: center;
+  background-size: cover;
+  background-image: url('/wp-content/themes/img/fiberoptics_orange.jpg');
+  min-height: 80%;
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+/*
+
+/* Insert Image */
+.cover-img {
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+video {
+  margin-top: 15%;
+  width: 130rem;
+}
+
+/* Sizing Section */
+.tiny{
+  font-size:10px!important
+}
+.small{
+  font-size:12px!important
+}
+.medium{
+  font-size:15px!important
+}.large{
+  font-size:18px!important
+}
+.xlarge{
+  font-size:24px!important
+}
+.xxlarge{
+  font-size:36px!important
+}
+.jumbo{
+  font-size:64px!important
+}
+
+/* Opacity */
+.opacity,.hover-opacity:hover{
+  opacity:0.60
+}
+.opacity-off,.hover-opacity-off:hover{
+  opacity:1
+}
+.opacity60 {
+  opacity: .60;
+}
+
+/* Hover */
+.white,.hover-white:hover{
+  color:#000!important;
+  background-color:#fff!important
+}
+
+/* Padding */
+.padding-small{
+  padding:4px 8px!important
+}
+.padding{
+  padding:8px 16px!important
+}
+.padding-large{
+  padding:12px 24px!important
+}
+
+
+
+
+/* Margin */
+.margin{
+  margin:16px!important
+}
+.margin-top{
+  margin-top:16px!important
+}
+.margin-bottom{
+  margin-bottom:16px!important
+}
+
+/* Change area of display */
+.overlay{
+  position:fixed;
+  display:none;
+  width:100%;
+  height:100%;
+  top:0;left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0,0,0,0.5);
+  z-index:2
+}
+.display-topleft{
+  position:absolute;
+  left:0;top:0
+}
+.display-topright{
+  position:absolute;
+  right:0;
+  top:0
+}
+.display-bottomleft{
+  position:absolute;
+  left:0;
+  bottom:0
+}
+.display-bottomright{
+  position:absolute;
+  right:0;
+  bottom:0
+}
+.display-middle{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%)
+}
+.display-left{
+  position:absolute;
+  top:50%;
+  left:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(-0%,-50%)
+}
+.display-right{
+  position:absolute;
+  top:50%;
+  right:0%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(0%,-50%)
+}
+.display-topmiddle{
+  position:absolute;
+  left:50%;
+  top:0;
+  transform:translate(-50%,0%);
+  -ms-transform:translate(-50%,0%)
+}
+.display-bottommiddle{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translate(-50%,0%);
+  -ms-transform:translate(-50%,0%)
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+position: absolute;
+top: 8px;
+left: 16px;
+}
+
+/* Top right text */
+.top-right {
+position: absolute;
+top: 8px;
+right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+position: absolute;
+bottom: 8px;
+right: 16px;
+}
+
+/* Centered text */
+.centered {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner{
+  background-color: #000;
+}
+
+.learnmore-button{
+  position: absolute;
+  bottom: 15%;
+  border: 1px solid rgba(223,131,68,1);
+  background-color: rgba(223,131,68,1);
+  padding: 20px;
+  border-radius: 4;
+}
+
+.learnmore-button .navbar-button{
+  font-size: 24px;
+  justify-content: center;
+  
+}
+
+.learnmore-button:hover{
+  background-color: rgba(223,131,68,0.2);
+}
+
+/* Color of Text */
+.text-white{
+  color:white!important
+}
+
+.text-black{
+  color:black!important
+}
+
+.text-lightblue{
+  color:lightblue!important
+}
+
+/* Location of Text within div */
+.text-center{
+  text-align: center;
+}
+
+.container{
+  padding:0.01em 16px
+}
+
+/* Company Advancment Section (About our Work)*/
+.our-work{
+  color: black;
+  background-color: #f5f5f5;
+}
+
+.our-work h1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+  display: flex;
+  justify-content: center;
+  font-size: 52px;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.our-work .title {
+  background-color: black;
+  color: white;
+}
+
+.our-work .title-descriptor {
+  background-color: black;
+  color: white;
+  -webkit-flow-into: calc(100);
+  
+}
+
+
+.work {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20%;
+  margin-right: 20%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  text-align: center;
+  max-width: auto;
+}
+
+.work-box {
+  position: relative;
+  background-color: #ffffff;
+  flex: 35%;;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 30px;
+  padding: 40px;
+  border: 2px solid black;
+  border-radius: 5%;
+  
+}
+
+.work-box h1 {
+  font-size: 48px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+
+}
+
+/* About Us */
+.about-us {
+  background-size: 70%;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  padding: 100px 0;
+  margin: 30px;
+  margin-top: 200px;
+  padding-bottom: 200px;
+}
+
+.about-us-img {
+  position: absolute;   
+}
+
+.inner-container{
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 80px;
+  font-weight: 700;
+  margin-top: 100px;
+
+}
+
+.inner-container h1{
+  margin-bottom: 30px;
+  font-size:30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 16px;
+  color: black;
+  /*color: #545454;*/
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media screen and (max-width:1200px){
+  .inner-container{
+      padding:80px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .about-us{
+      background-size: 100%;
+      padding:100px 40px;
+      margin-left: 100px;
+  }
+  
+  .inner-container{
+      width: 80%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .about-us{
+      padding: 0;
+  }
+  
+  .inner-container{
+      padding: 60px;
+      opacity: 1!important;
+  }
+
+  .about-us{
+      background-color: black;
+  }
+}
+
+
+/* People of the company ------------------------------------*/
+
+.wrapper {
+  margin-top: 10%;
+  background-color: #f5f5f5;
+}   
+
+.wrapper h1 {
+  font-size: 52px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: space-around;
+}
+
+.team .team_member {
+  color: black;
+  background-color: white;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 400px;
+  padding: 50px;
+  line-height: 20px;
+  position: relative;
+}
+
+.team .team_member h3 {
+  color: black;
+  font-size: 26px;
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+
+.team .team_member p.role {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 12px, 0;
+  padding-bottom: 15px;
+}
+
+.team .team_member .member_img {
+  color:yellow;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid white;
+}
+
+.team .team_member .member_img img{
+  width: 100px;
+  height: 100px;   
+}
+
+/* Contact Form */
+.contact-form-div {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.contact-title{
+  position: relative;
+  text-align: center;
+  margin-top: 150px;
+  color: black;
+  transition: all 4s ease-in-out;
+  margin: 50px;
+}
+
+.contact-title h1 {
+  font-size: 28px;
+  line-height: 10px;
+}
+
+.contact-form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form{
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  color: #fff;
+  transition: all 4s ease-in-out;
+  border: solid 1px #fff;
+  background-color: #ffff;
+  padding: 30px;
+}
+
+.form-control{
+  width: 200px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(255, 11, 11);
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+
+
+/* Footer */
+.cp-text{ 
+  color: rgba(0,0,0,.7); 
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  margin-top: 10%;
+}
